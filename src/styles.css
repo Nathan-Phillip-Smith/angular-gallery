@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body {
+  background-color: #e8e8e8;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+h1 {
+  font-weight: 100;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 20px 30px;
+}
+.category {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  margin: 0 20px;
+}
+.feed {
+  width: 100%;
+}
+.Ul {
+  width: 100%;
+  list-style: none;
+
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Ul::after {
+  content: "";
+  flex-grow: 999;
+}
+
+.li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 400px;
+  flex: 1 1 auto;
+}
+
+.img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.credit {
+  font-size: 12px;
+  line-height: 15px;
+  color: #9e9e9e;
+  text-decoration: none;
+  text-align: center;
+  font-style: italic;
+}
+.img-container {
+  width: 100%;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.large-img {
+  max-width: 50%;
+  max-height: 600px;
+  margin-bottom: 40px;
+}
+.img-info {
+  width: 20%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.img-info p {
+  flex-wrap: wrap;
+  font-weight: 100;
+  margin: 20px 0;
+}
+.photographer {
+  display: flex;
+}
+.photographer h2 {
+  margin: 20px;
+  font-weight: 100;
+}

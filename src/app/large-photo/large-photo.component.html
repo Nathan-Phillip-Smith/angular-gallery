@@ -1,0 +1,21 @@
+<div>
+  <div class="navbar">
+    <h1>Image Gallery</h1>
+
+    <div class="categories">
+      <a routerLink="/" class="category" style="font-weight: 100">
+        Return To Gallery
+      </a>
+    </div>
+  </div>
+  <div class="img-container">
+    <img class="large-img" [src]="image?.raw" />
+    <div class="img-info">
+      <div class="photographer">
+        <h2>{{ user?.first_name }} {{ user?.last_name }}</h2>
+        <img [src]="user?.profile_image?.medium" />
+      </div>
+      <p *ngIf="user?.bio">Bio: {{ user?.bio }}</p>
+    </div>
+  </div>
+</div>

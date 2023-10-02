@@ -1,0 +1,14 @@
+<div class="navbar">
+  <h1>Image Gallery</h1>
+
+  <div class="categories">
+    <a
+      *ngFor="let category of categories"
+      class="category"
+      [style.fontWeight]="bold === category.slug ? '400' : '100'"
+      (click)="setUrlAndBold(category)"
+    >
+      {{ category.name }}
+    </a>
+  </div>
+</div>

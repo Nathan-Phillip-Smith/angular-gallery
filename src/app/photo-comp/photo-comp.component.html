@@ -1,0 +1,14 @@
+<a
+  class="img"
+  [routerLink]="['/photo']"
+  [state]="{ image: urls, user: user, fromImage: true }"
+>
+  <img class="img" [src]="urls?.regular" />
+</a>
+<a
+  class="credit"
+  target="_blank"
+  [href]="'https://unsplash.com/@' + user?.username"
+>
+  {{ user?.name }}
+</a>
