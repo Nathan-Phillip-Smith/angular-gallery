@@ -39,10 +39,7 @@ export class HomeComponent implements OnInit {
 
   onCategoryClicked(categoryName: string) {
     let items = this.dataService.getCategories();
-    console.log(items);
-    console.log(categoryName);
     let item = items.filter((e) => e.name === categoryName);
-    console.log(item[0]);
     this.url =
       'https://api.unsplash.com/topics/' +
       item[0].slug +

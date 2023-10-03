@@ -13,9 +13,10 @@ export class LargePhotoComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    let state = window.history.state;
     this.route.queryParams.subscribe((params) => {
-      this.image = params['image'];
-      this.user = params['user'];
+      this.image = state.image;
+      this.user = state.user;
     });
   }
 }

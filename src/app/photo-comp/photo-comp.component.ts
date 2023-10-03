@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PhotoCompComponent implements OnInit {
   @Input() photo: any;
+
   user: any;
   urls: any;
 
